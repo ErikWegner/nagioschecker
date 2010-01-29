@@ -1,7 +1,11 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+checkbox.nch {
+	width: 350px;
+}
+
 description.nch {
-	width: 400px;
+	width: 350px;
 }
 
 .nagioschecker-link {
@@ -17,8 +21,13 @@ caption.nch {
 .nagioschecker-panel {
   padding:0;border:0;
 }
+
+label {
+	
+	cursor: pointer;
+	}
+
 .nagioschecker-panel label{
-font-size:20px;
 }
 
 statusbarpanel .nagioschecker-box {
@@ -30,7 +39,7 @@ statusbarpanel .nagioschecker-box {
 }
 
 .nagioschecker-label-new {
-  font-weight: bold;
+  font-weight: bold;  
   background-color:white;
   color: red;
   padding-left:2px;
@@ -39,139 +48,197 @@ statusbarpanel .nagioschecker-box {
   margin:0;
 }
 
+.nagioschecker-errors {
+  margin:0;
+
+  margin-left:2px;
+  margin-right:2px;
+  font-weight: bold;
+  font-size:11px;
+  color: red;
+ 
+  padding-left: 2px;
+  padding-right: 2px;
+  
+    border: 1px red solid;
+
+}
+
+.nagioschecker-down-image {
+  background-color:#CC0000;
+}
+
 .nagioschecker-down-value {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #BDBDBD;
-/*
-  background-color:#700000;
-*/
   background-color:#CC0000;
-
+     font-size:11px;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #CC0000 solid;
 }
 
 .nagioschecker-down-value-inverted {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #700000;
+     font-size:11px;
   background-color:#ffffff;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #ffffff solid;
 }
 
+.nagioschecker-unreachable-image {
+  background-color:#CC0000;	
+}
 .nagioschecker-unreachable-value {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #ffffff;
+     font-size:11px;
   background-color:#CC0000;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #CC0000 solid;
 }
 
 .nagioschecker-unreachable-value-inverted {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #A30000;
+     font-size:11px;
   background-color:#ffffff;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #ffffff solid;
 }
 
+.nagioschecker-warning-image {
+  background-color:#E6E600;
+}
 .nagioschecker-warning-value {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: black;
+     font-size:11px;
   background-color:#E6E600;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #E6E600 solid;
 }
 
+.nagioschecker-allok-image {
+  background-color:#44CC00;
+}
+
 .nagioschecker-allok-value {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: white;
+     font-size:11px;
   background-color:#44CC00;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #44CC00 solid;
 }
 
 .nagioschecker-warning-value-inverted {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #E6E600;
+     font-size:11px;
   background-color:black;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px black solid;
 }
 
+.nagioschecker-unknown-image {
+  background-color:#FF8B3D;
+}
 .nagioschecker-unknown-value {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: black;
+     font-size:11px;
   background-color:#FF8B3D;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px #FF8B3D solid;
 }
 .nagioschecker-unknown-value-inverted {
+  margin:0;
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #FF8B3D;
+     font-size:11px;
   background-color:black;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
+  /*   -moz-border-radius: 3px;*/
   border: 1px black solid;
 }
 
+.nagioschecker-critical-image {
+  background-color: #FF0000;
+}
 .nagioschecker-critical-value {
+  margin:0;
+  /* padding:0;
+  border:0;*/
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
+  font-size:11px;
   color: white;
   background-color: #FF0000;
   padding-left: 2px;
   padding-right: 2px;
-  -moz-border-radius: 3px;
-  border: 1px #FF0000 solid;
+  /* -moz-border-radius: 4px;*/
+  border: 1px #FF0000 solid; 
 }
 
 .nagioschecker-critical-value-inverted {
+  margin:0;
+ /* padding:0;
+  border:0; */
   margin-left:2px;
   margin-right:2px;
   font-weight: bold;
   color: #EB0000;
+  font-size:11px;
   background-color:white;
   padding-left:2px;
   padding-right:2px;
-  -moz-border-radius: 3px;
-  border: 1px white solid;
+   /* -moz-border-radius: 4px;*/
+   border: 1px white solid; 
 }
 
 #nagioschecker-panel-hosts,#nagioschecker-panel-services,#nagioschecker-panel-info {
@@ -183,6 +250,7 @@ statusbarpanel .nagioschecker-box {
 
 #nagioschecker-panel-services label {
   padding:0;
+   cursor: pointer;
 }
 
 .nagioschecker-tooltip-title {
@@ -190,7 +258,6 @@ statusbarpanel .nagioschecker-box {
   font-size: 1.2em;
   margin-bottom: 4px;
  -moz-border-radius:3px;
-  background-color:#FFFFF;
 }
 
 .nagioschecker-tooltip-title-date {
@@ -198,7 +265,7 @@ statusbarpanel .nagioschecker-box {
   font-size: 0.9em;
   margin-bottom: 4px;
  -moz-border-radius:3px;
-  background-color:#FFFFF;
+  background-color:#FFFFFF;
 }
 
 .nagioschecker-tooltip-down-row {
@@ -238,11 +305,11 @@ statusbarpanel .nagioschecker-box {
 }
 .nagioschecker-tooltip-critical-row:hover {
   background-color:#E60000;
-	border:1px #E60000 solid;
+	border:1px  #E60000  solid;
+	cursor:pointer;
 }
 
 .nagioschecker-tooltip-row {
-/*  font-size: 10px;*/
   padding:0;
   margin:0;
 }
@@ -250,15 +317,14 @@ statusbarpanel .nagioschecker-box {
 .nagioschecker-tooltip {
 	-moz-appearance:none;
 	background-color: infobackground;
-/*	border:none;*/
-/*  max-width: 500;*/
 }
 
 .nagioschecker-popup {
 	-moz-appearance:none;
-	background-color: infobackground;
-/*	border:none;*/
+		background-color: infobackground;
 }
+
+
 
 .nagioschecker-tooltip-warning-row {
   font-weight: bold;
@@ -300,6 +366,9 @@ statusbarpanel .nagioschecker-box {
 	font-weight: bold;
 }
 
+#nagioschecker-mover {
+    cursor: move; 
+}
 .nch-status-url {
   background-color:white;
   color: black;
